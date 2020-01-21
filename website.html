@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta http-equiv="Content-Type"content="text/html;charset=UTF-8"/>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Simone V2</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/front_cs_js/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/front_cs_js/meanmenu.css">
+    <link rel="stylesheet" href="assets/front_cs_js/jquery.simpleTicker.css">
+    <link rel="stylesheet" href="assets/front_cs_js/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/front_cs_js/style.css">
+    <link rel="stylesheet" href="assets/front_cs_js/side.css">
+    <link rel="stylesheet" href="assets/front_cs_js/responsive.css">
+    <link rel='stylesheet' href='assets/front_cs_js/style_notif.css'>
+    <link rel="stylesheet" href="assets/front_cs_js/floating-wpp.css">
+    <style>
+        .main-menu nav > ul > li:last-child a {
+            background: transparent!important;
+        }
+        .nav-aktif {
+            background: #673ab7!important;
+            padding: 4px 10px!important;
+            border-radius: 5px!important;
+            color: white!important;
+        }
+        .rating {
+            overflow: hidden;
+            display: inline-block;
+        }
+        .rating-input {
+            float: right;
+            width: 17px;
+            height: 17px;
+            padding: 0;
+            margin: 0 0 0 -17px;
+            opacity: 0;
+        }
+        .rating:hover .rating-star:hover,
+        .rating:hover .rating-star:hover ~ .rating-star,
+        .rating-input:checked ~ .rating-star {
+            background-position: 0 0;
+        }
+        .rating-star,
+        .rating:hover .rating-star {
+            position: relative;
+            float: right;
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        .no-item-demo {
+            background: transparent!important;
+            box-shadow: none!important;
+            -webkit-box-shadow: none!important;
+            -moz-box-shadow: none!important;
+            margin: none!important;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        .pagination li a {
+            margin-left: 3px!important;
+            margin-right: 3px!important;
+        }
+        .pagination li .active {
+            margin-top: -3px!important;
+            margin-left: 5px!important;
+            margin-right: 5px!important;
+        }
+        .next-active-span, .prev-active-span {
+            background-color: transparent!important;
+            border: none!important;
+            color:#377BB3!important;
+            font-size: 30px!important;
+            font-weight: 600!important;
+        }
+        .next-active, .prev-active {
+            background-color: transparent!important;
+            border: none!important;
+            margin-top: -10px!important;
+        }
+        .next-hidden, .prev-hidden {
+            display: none!important;
+        }
+        .item-demo  .fullimage {
+            height: 300px!important;
+        }
+        .item-demo  .fullimage1 {
+            height: 150px!important;
+        }
+        .single-product  .fullimage {
+            height: 100%!important;
+        }
+        form.item-search::after {
+            display: none!important;
+        }
+        #search-icon {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            font-size: 22px;
+        }
+        #sortby:before {
+            display: none!important;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="header-area">
+            <div class="header-top hidden-xs hidden-sm">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-6 col-sm-6">
+                            <div class="n">
+                                <div id="sticker-item" class="ticker">
+                                    <ul>
+                                        <li><div class="fa fa-user"></div> Welcome Back</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="h-phone">
+                                <p>Need help ?  <a href="#" target="_blank">Contact now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-board-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8  hidden-sm ">
+                            <div class="logo hidden-xs">
+                                <a href="#"><img src="images/simone-icon1024.png" height="60" width="60" alt="Simone V2">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5 col-xs-12 no-padding">
+                            <div class="userboard">
+                                <ul class="board-item">
+                                    <li><a href="#"><img type="image" src="images/google-play.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu-area"  style="background-color: #272829">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="nav">
+                                        <li ><a style="color: #ffffff" href="#"></i></a></li>
+                                        <li ><a style="color: #ffffff" href="#">Whatsapp</a></li>
+                                        <li ><a style="color: #ffffff" href="#">Instagram</a></li>
+                                        <li ><a style="color: #ffffff" href="#">Facebook</a></li>
+                                        <li ><a style="color: #ffffff" href="#">Powerpoint</a></li>
+                                        <li ><a style="color: #ffffff" href="#">Tools</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area">
+                <div class="mobile-menu">
+                    <div class="m-logo">
+                        <a href="#"><img src="images/simone-icon1024.png" height="60" width="60" alt="Simone V2">
+                        </a>
+                    </div>
+                    <nav id="dropdown">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                            <li><a href="#">Whatsapp</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Powerpoint</a></li>
+                            <li><a href="#">Tools</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="hero-area overly-bg" data-stellar-background-ratio=".9" style="background-image: url(images/_%26background.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-wrap">                    
+                            <h2 class="hero-title">  LEBIH DARI 350 PRODUK DIGITAL KEREN</h2>
+                            <p class="hero-intro">Produk yang sudah terbukti Berhasil dan Powerfull </p>
+                            <form id="myForm" method="GET" name="form_search" action="#" class="item-search" >
+                                <input type="hidden" name="a" value="Mg">
+                                <input type="text" name="cari" placeholder="Search your Items">
+                                <button class="btn-link" id="search-icon" type="submit" name="data_search1" tabindex="-1" /><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-product-area section-padding" style="background-color: #ffffff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-intro">
+                            <h2 class="section-title" style="color: #666666">Featured Items</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img src="images/58388_Walmaker.jpg" alt="Walmaker">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Walmaker</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4584 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img src="images/70428_SiMonE.jpg" alt="SiMonE">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">SiMonE</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>925 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img src="images/30231_SIMPEL-ADBREAKERS.jpg" alt="SIMPEL ADBREAKERS">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">SIMPEL ADBREAKERS</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4496 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img src="images/80975_ngirimin.jpg" alt="Ngirim.in">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Ngirim.in</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4450 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-product-area section-padding" style="background-color: #ffffff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-intro">
+                            <h3 class="section-title" style="color: #666666">Produk Digital Populer </h3>
+                            <p class="hero-intro" style="color: #666666">Berikut produk digital yang paling banyak dilihat minggu ini </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/4401_WP-More-Views-Pro.jpg" alt="WP More Views Pro">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">WP More Views Pro</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4601 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Product End -->
+                    <!-- Single Product  -->    
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/32868_Whatsapp-Auto-Sender.jpg" alt="Whatsapp Auto Sender">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Whatsapp Auto Sender</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4594 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/32877_Zelda-Template-Toko-Online-Blogspot.jpg" alt="Zelda Template Toko Online Blogspot">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Zelda Template Toko Online Blogspot</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4589 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/58388_Walmaker.jpg" alt="Walmaker">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Walmaker</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4584 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/4236_WebEvolution-Theme-Wordpress.jpg" alt="WebEvolution Theme Wordpress">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">WebEvolution Theme Wordpress</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4578 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/94124_Whatsapp-Automation-Tool.jpg" alt="Whatsapp Automation Tool">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Whatsapp Automation Tool</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4577 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/40845_WASenderPro.jpg" alt="WASenderPro">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">WASenderPro</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4569 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/77074_Web-Push.jpg" alt="Web Push">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">Web Push</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4568 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage" src="images/68563_WAudio-English-Learners.jpg" alt="WAudio English Learners">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h3 class="product-name"><a href="#">WAudio English Learners</a> </h3>
+                                    <span class="p-author">
+                                        <a href="#">By Ratakan Marketplace</a>
+                                    </span>
+                                </div>
+                                <div class="product-meta">
+                                    <span class="meta-download">
+                                        <i class="fa fa-eye"></i>4563 Views
+                                    </span>
+                                    <div class="ratings">
+                                        <div class="empty-stars"></div>
+                                        <div class="full-stars" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-product-area section-padding" style="background-color: #3a3e4c">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-intro">
+                            <h2 class="section-title" style="color: #ffffff">Latest Items</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/40940_Hypnoteaching.jpg" alt="Hypnoteaching">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/16964_SEO-Mastery.jpg" alt="SEO Mastery">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/76477_Event-Mastery.jpg" alt="Event Mastery">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/80763_Plugin-WP-AMT-Mesin-Blog-Otomatis.jpg" alt="Plugin WP AMT Mesin Blog Otomatis">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/65296_Kelas-Advance-PBN.jpg" alt="Kelas Advance PBN">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/49342_Bongkar-Website-Volume-2.jpg" alt="Bongkar Website Volume 2">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/90743_Jago-Bikin-Web.jpg" alt="Jago Bikin Web">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/40553_Tools-Ngontak-Bio-Instagram.jpg" alt="Tools Ngontak Bio Instagram">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/4702_Recispot-App.jpg" alt="Recispot App">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Single Product End -->
+                    <!-- Single Product  -->    
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/141_Super-Belajar-dengan-Mental-Juara.jpg" alt="Super Belajar dengan Mental Juara">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Single Product End -->
+                    <!-- Single Product  -->    
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/96337_Cover-Graph.jpg" alt="Cover Graph">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/8348_Minisite-Blogspot-Responsive.jpg" alt="Minisite Blogspot Responsive Versi 2.0">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/18373_Markas-Aplikasi.jpg" alt="Markas Aplikasi">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/76903_Copy-Paste-Formula.jpg" alt="Copy Paste Formula">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/60711_Digital-Cover-3D.jpg" alt="Digital Cover 3D">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/34500_Kursus-Desain-Adobe-Ilustrator.jpg" alt="Kursus Desain Adobe Ilustrator">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/55172_WP-Fomify-Plugin.jpg" alt="WP Fomify Plugin">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="item-demo">
+                            <figure>
+                                <img class="fullimage1" src="images/48000_Mahir-Desain-Dengan-XARA-Designer.jpg" alt="Mahir Desain Dengan XARA Designer">
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">View Details <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-button">
+                    <a href="#" class="custom-btn">View All Items</a>
+                </div>
+            </div>
+        </section>
+        <section class="feature-product-area section-padding" style="background-color: #ffffff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-intro">
+                            <h3 class="section-title" style="color: #666666">CATEGORY </h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>                       
+                <div class="row">
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/9970_buku.jpg" alt="Buku" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Buku <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/91599_frsigngrphic.jpg" alt="Design Graphics" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Design Graphics <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/59628_ebbok.jpg" alt="Ebook" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Ebook <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/82007_acourse.jpg" alt="Ecourses" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Ecourses <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/1474_facebook.jpg" alt="Facebook" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Facebook <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/70997_instagram-logo.png" alt="Instagram" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Instagram <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/34987_prl.jpg" alt="PLR" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">PLR <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/40362_powerpoint.png" alt="Powerpoint" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Powerpoint <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/79987_tools.jpg" alt="Tools" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Tools <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/32984_tutorial.png" alt="Tutorial" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Tutorial <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/64630_website.jpg" alt="Website" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Website <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/33786_whatsapp.jpg" alt="Whatsapp" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Whatsapp <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/60716_wordpress.png" alt="Wordpress" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Wordpress <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-3">
+                        <div class="item-demo" style="background: transparent!important; box-shadow: none!important;">
+                            <figure>
+                                <div class="item-demo1">
+                                    <img src="images/29933_youtube.jpg" alt="Youtube" style="border-radius: 50%!important">
+                                </div>   
+                                <div class="product-caption">
+                                    <div class="caption-cel">
+                                        <div class="product-link">
+                                            <div>
+                                                <div>
+                                                    <a href="#">Youtube <span><i class="fa fa-eye"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promo-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-laptop"></i></span>
+                            <h3 class="promo-heading">High Quality Products</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-clock-o"></i></span>
+                            <h3 class="promo-heading">24/7 Customer Services</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                            <h3 class="promo-heading">100% Satisfaction</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-money"></i></span>
+                            <h3 class="promo-heading">Money Back guarantee</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-area">
+            <div class="footer-top" style="background-color: #363a40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4">
+                            <div class="footer-widget">
+                                <h3 class="footer-title" style="color: #dededf">About </h3>
+                                <ul class="our-company" style="color: #dededf">
+                                    <ul>
+                                        <li><a href="#">Daftar SimoneAps</a></li>
+                                        <li><a href="#">Daftar Produk Keren</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="footer-widget support-pd">
+                                <h3 class="footer-title" style="color: #dededf">Help</h3>
+                                <ul class="our-support" style="color: #dededf">
+                                    <li><a href="#">Member Area</a></li>
+                                    <li><a href="#">Video Tutorial</a></li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 col-sm-4">
+                            <div class="footer-widget">
+                                <h3 class="footer-title" style="color: #dededf">Contact</h3>
+                                <ul class="product-list" style="color: #dededf">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-sm-3">
+                            <div class="footer-widget">
+                                <h3 class="footer-title" style="color: #dededf">FIND US</h3>  
+                                <a href="#"><img type="image" src="images/google-play.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-buttom" style="background-color: #070014">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6 col-xs-12">
+                            <div class="copy-right" style="color: #dededf">
+                                <p>Copyright 2019 diquee All Rights Reserved. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-7 col-xs-12">
+                            <div class="footer-social">
+                                <ul>
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook-square"></i>facebook</a></li>                               
+                                    <li class="gp"><a href="#"><i class="fa fa-instagram"></i>instagram</a></li>    
+                                    <li class="tw"><a href="#"><i class="fa fa-twitter"></i>twitter</a></li> 
+                                    <li class="be"><a href="#"><i class="fa fa-youtube"></i>youtube</a></li>      
+                                    <div id="myButton"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="assets/front_cs_js/jquery.min.js"></script>
+    <script src="assets/front_cs_js/bootstrap.min.js"></script>
+    <script src="assets/front_cs_js/jquery.meanmenu.js"></script>
+    <script src="assets/front_cs_js/isotope.pkgd.min.js"></script>
+    <script src="assets/front_cs_js/jquery.stellar.min.js"></script>
+    <script src="assets/front_cs_js/jquery.simpleTicker.js"></script>
+    <script src="assets/front_cs_js/jquery.syotimer.min.js"></script>
+    <script src="assets/front_cs_js/owl.carousel.min.js"></script>
+    <script src="assets/front_cs_js/main.js"></script>
+    <script type="text/javascript" src="assets/front_cs_js/floating-wpp.js"></script>
+    <script type="text/javascript" src="assets/front_cs_js/script_notif.js"></script>
+    <section class="custom-social-proof">
+        <div class="custom-notification">
+            <div class="custom-notification-container">
+                <div class="custom-notification-image-wrapper">
+                    <img src="images/78315_latest_item11.jpg">
+                </div>
+                <div class="custom-notification-content-wrapper">
+                    <p class="custom-notification-content">
+                        <a href='#' target='_blank'>
+                            Mau Punya website dengan 350 produk affiliasi <br/>
+                            <small>seperti halaman ini ?</small>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="custom-close"></div>
+        </div>
+    </section>
+</body>
+</html>   
